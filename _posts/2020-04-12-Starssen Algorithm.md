@@ -41,9 +41,7 @@ C= \begin{bmatrix}\mathbf {A} _{1,1}\mathbf {B} _{1,1}+\mathbf {A} _{1,2}\mathbf
 
  M이라는 수식을 미리 표현해 놓고 행렬곱을 표현하는데 M은 다음과 같다
 
- \mathbf {M} _{1}=(\mathbf {A} _{1,1}+\mathbf {A} _{2,2})(\mathbf {B} _{1,1}+\mathbf {B} _{2,2})
-
-\mathbf {M} _{1}:=(\mathbf {A} _{1,1}+\mathbf {A} _{2,2})(\mathbf {B} _{1,1}+\mathbf {B} _{2,2})
+{\displaystyle \mathbf {M} _{1}=(\mathbf {A} _{1,1}+\mathbf {A} _{2,2})(\mathbf {B} _{1,1}+\mathbf {B} _{2,2})}
 
  \mathbf {M} _{2}=(\mathbf {A} _{1,1}+\mathbf {A} _{2,2})\mathbf {B} _{1,1}
 
