@@ -31,7 +31,7 @@ B =\begin{bmatrix}\mathbf {B} _{1,1}&\mathbf {B} _{1,2}\\\ \mathbf {B} _{2,1}&\m
 
 C= \begin{bmatrix}\mathbf {A} _{1,1}\mathbf {B} _{1,1}+\mathbf {A} _{1,2}\mathbf {B} _{2,1}&\mathbf {A} _{1,1}\mathbf {B} _{1,2}+\mathbf {A} _{1,2}\mathbf {B} _{2,2}\\\ \mathbf {A} _{2,1}\mathbf {B} _{1,1}+\mathbf {A} _{2,2}\mathbf {B} _{2,1}&\mathbf {A} _{2,1}\mathbf {B} _{1,2}+\mathbf {A} _{2,2}\mathbf {B} _{2,2}\end{bmatrix}
 
-로나타내어 지고
+로나타내어 진다.
 
 그리고 이 행렬곱의 수행시간은 행렬곱인 C의 n개의 원소n개에 n번에 곱셉을하고 이 원소가 nxn개가 있으므로 n의 3제곱의 수행시간을 가지고 있다.
 
@@ -41,7 +41,23 @@ C= \begin{bmatrix}\mathbf {A} _{1,1}\mathbf {B} _{1,1}+\mathbf {A} _{1,2}\mathbf
 
  M이라는 수식을 미리 표현해 놓고 행렬곱을 표현하는데 M은 다음과 같다
 
- M_{1} = (A_{1,1}+A_{2,2}) (B_{1,1}+B_{2,2})
+ \mathbf {M} _{1}=(\mathbf {A} _{1,1}+\mathbf {A} _{2,2})(\mathbf {B} _{1,1}+\mathbf {B} _{2,2})
+
+ \mathbf {M} _{2}=(\mathbf {A} _{1,1}+\mathbf {A} _{2,2})\mathbf {B} _{1,1}
+
+ \mathbf {M} _{3}=\mathbf {A} _{1,1}(\mathbf {B} _{1,2}-\mathbf {B} _{2,2})
+
+ \mathbf {M} _{4}=\mathbf {A} _{2,2}(\mathbf {B} _{2,1}-\mathbf {B} _{1,1})
+
+ \mathbf {M} _{5}=(\mathbf {A} _{1,1}+\mathbf {A} _{1,2})\mathbf {B} _{2,2}
+
+ \mathbf {M} _{6}=(\mathbf {A} _{2,1}-\mathbf {A} _{1,1})(\mathbf {B} _{1,1}+\mathbf {B} _{1,2})
+
+ \mathbf {M} _{7}=(\mathbf {A} _{1,2}-\mathbf {A} _{2,2})(\mathbf {B} _{2,1}+\mathbf {B} _{2,2})
+
+그리고 이제 이 M으로 C를 만들면
+
+
 
 
 
