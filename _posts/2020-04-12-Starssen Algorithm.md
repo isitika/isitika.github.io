@@ -22,12 +22,12 @@ use_math: true
 일단 행렬 A와 B를 2x2행렬로 나타내어 보면
 
 A=  \begin{bmatrix}
-      A_{1,1}&A_{1,2}\\\\
+      A_{1,1}&A_{1,2}\\
       A_{2,1}&A_{2,2} 
       \end{bmatrix}
 
 B= \begin{bmatrix}
-      B_{1,1}&B_{1,2}\\\\
+      B_{1,1}&B_{1,2}\\
       B_{2,1}&B_{2,2} 
      \end{bmatrix}
 
@@ -36,38 +36,17 @@ B= \begin{bmatrix}
 그의 곱인 C는
 
 C= \begin{bmatrix}
-      A_{1,1}B_{1,1}+A_{1,2}B_{2,1}&A_{1,1}B_{1,2}+A_{1,2}B_{2,2}\\\\
+      A_{1,1}B_{1,1}+A_{1,2}B_{2,1}&A_{1,1}B_{1,2}+A_{1,2}B_{2,2}\\
       A_{2,1}B_{1,1}+A_{2,2}B_{2,1}&A_{2,1}B_{1,2}+A_{2,2}B_{2,2}
      \end{bmatrix}
 
 로 나타내어 진다.
 
+그리고 이 행렬곱의 수행시간은 행렬곱인 C의 n개의 원소n개에 n번에 곱셉을하고 이 원소가 nxn개가 있으므로 n^{3}의 수행시간을 가지고 있다.
+
 #### 3.스트라센 알고리즘 
 
 
-
-A와 B를 체 F에 대한 정사각행렬이라고 하자. 두 행렬의 곱 C는 다음과 같다.![](https://wikimedia.org/api/rest_v1/media/math/render/svg/f4c680ec4a32379114e0326ba69b179881b69e8e)
-만약 A와 B가 2n × 2n 꼴의 크기가 아니라면 먼저 모자라는 행과 열을 0으로 채운다. 이 경우 행렬 곱셈이 끝난 뒤 행렬에서 필요한 부분만 다시 잘라 내야 한다.
-
-이제 A, B, C를 같은 크기의 정사각행렬 네 개로 나눈다.
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/41c6337190684aff7b69f124226d6e62d79ebca5)
-
-이 때,
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/e2948b2c6caf12770b217310b956b23abdc80380)
-
-따라서 다음이 성립한다.
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/8d91fa79d27697a5c6551698c1a83a3d5837c57b)
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/a08bea24eec9422cda82e6e04af1d96fc6822038)
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/7adffe97db091ce8ba231352b3721bbe261985ca)
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/8b40ed74cf54465d8e54d09b8492e50689928313)
-
-이 과정에서는 필요한 연산의 수가 줄어 들지 않는다. 여전히 *Ci,j* 행렬을 계산하려면 여덟 번의 곱셈과 네 번의 덧셈이 필요하다.
 
 이제 다음과 같은 행렬을 정의한다.
 
