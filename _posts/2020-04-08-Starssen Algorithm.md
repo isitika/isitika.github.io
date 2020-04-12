@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Starssen Algorithm
-date: 2020-04-08 21:00:00 +0900
+date: 2020-04-12 21:00:00 +0900
 author: dongJin
 ---
 
@@ -10,19 +10,27 @@ author: dongJin
 
 #### 1.개요
 
-선형대수학에서 슈트라센 알고리즘은 독일의 수학자 폴커 슈트라센(Volker Strassen)이 1969년에 개발한 행렬 곱셈 알고리즘이다. 정의에 따라 n×n 크기의 두 행렬을 곱하면 O(n3)의 시간이 소요되지만 이 알고리즘은 대략 O(n2.807)의 시간이 소요된다.
+슈트라센 알고리즘은 이름 그대로 독일의 수학자 폴커 슈트라센(Volker Strassen)이 만든 행렬 곱 연산을 빠르게 수행하기 위해 만든 알고리즘이다.
 
 
 
 #### 2.행렬의 곱셈
 
-크기가 n x n인 두 행렬 A와B의 곱을 C로 나타내고자 한다.
+크기가 n x n인 두 행렬 A와B의 곱을 C로 나타내보자.
 
-![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fssl.pstatic.net%2Fimages.se2%2Fsmedit%2F2015%2F10%2F7%2Fifgkah4w8sovix.jpg%22&type=w2)의 원소를 ![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fssl.pstatic.net%2Fimages.se2%2Fsmedit%2F2015%2F10%2F7%2Fifgk9ri3338ptm.jpg%22&type=w2)라 하고, ![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fssl.pstatic.net%2Fimages.se2%2Fsmedit%2F2015%2F10%2F7%2Fifgkavqe24i89q.jpg%22&type=w2)는 가로 ![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fssl.pstatic.net%2Fimages.se2%2Fsmedit%2F2015%2F10%2F7%2Fifgkb607pg9oe3.jpg%22&type=w2)는 세로를 나타낸다.
+일단 행렬 A와 B를 2x2행렬로 나타내어 보면
 
-B와 C도 동일하게 표시한다.
+A= \begin{bmatrix}
+ A_{1,1}& A_{1,2}\\ 
+ A_{2,1}&A_{2,2} 
+\end{bmatrix}
 
+B= \begin{bmatrix}
+ B_{1,1}& B_{1,2}\\ 
+ B_{2,1}&B_{2,2} 
+\end{bmatrix}
 
+로나타내어 지고
 
 행렬의 곱셈을 다음과 같이 표현할 수 있다.
 
