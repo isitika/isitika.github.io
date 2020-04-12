@@ -11,7 +11,7 @@ use_math: true
 
 #### 1.개요
 
-슈트라센 알고리즘은 이름 그대로 독일의 수학자 폴커 슈트라센(Volker Strassen)이 만든 행렬 곱 연산을 빠르게 수행하기 위해 만든 알고리즘이다.
+스트라센 알고리즘은 이름 그대로 독일의 수학자 폴커 스트라센(Volker Strassen)이 만든 행렬 곱 연산을 빠르게 수행하기 위해 만든 알고리즘이다.
 
 
 
@@ -46,23 +46,13 @@ C= \begin{bmatrix}
 
 #### 3.스트라센 알고리즘 
 
+스트라센 알고리즘은 이 행렬곱을 곱셉을 조금 더 사용하지 않고 계산하기 위해 만들어 졌다.
+
+ M이라는 수식을 미리 표현해 놓고 행렬곱을 표현하는데 M은 다음과 같다
+
+ M_{1} = (A_{1,1}+A_{2,2}) (B_{1,1}+B_{2,2})
 
 
-이제 다음과 같은 행렬을 정의한다.
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/1e9e6268d824de7ad5010a32a1921452b264f7ee)
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/0d40beeba8019e378fa0ed4b6e549c44a140a9ec)
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/45e8e9679d33f2c66e24bd812e1e554f95bb1571)
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/c12df2bb70f8f09f33f1ca4b8c2d577d5850a2ee)
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/715adfa757b74b3ad6b4eea545c24762e4079161)
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/30107b9c9c99494bf75f23e84b505e5921cee46e)
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/9e93ef1c265be8be96209dde36230d56e139fc72)
 
 이 *Mk* 행렬들은 *Ci,j* 행렬을 표현하는 데 쓰이는데, 이 행렬들을 계산하는 데는 일곱 번의 곱셈(각 변수마다 한 번씩)과 10번의 덧셈이 필요하다. 이제 *Ci,j* 행렬은 다음과 같이 표현할 수 있다.
 
