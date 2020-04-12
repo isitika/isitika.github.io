@@ -3,6 +3,7 @@ layout: single
 title: Starssen Algorithm
 date: 2020-04-12 21:00:00 +0900
 author: dongJin
+use_math: true
 ---
 
 스트라센 알고리즘
