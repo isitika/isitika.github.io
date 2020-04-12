@@ -21,33 +21,21 @@ use_math: true
 
 일단 행렬 A와 B를 2x2행렬로 나타내어 보면
 
-A= \begin{bmatrix}
- A_{1,1}& A_{1,2}\\ \
- A_{2,1}&A_{2,2} 
-\end{bmatrix}
+A=  \begin{bmatrix}
+      A_{1,1}& A_{1,2}\\ \
+      A_{2,1}&A_{2,2} 
+      \end{bmatrix}
 
 B= \begin{bmatrix}
- b_{1,1}& B_{1,2}\\ \
- B_{2,1}&B_{2,2} 
-\end{bmatrix}
+      B_{1,1}& B_{1,2}\\ \
+      B_{2,1}&B_{2,2} 
+     \end{bmatrix}
 
 로나타내어 지고
 
 행렬의 곱셈을 다음과 같이 표현할 수 있다.
 
-![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fssl.pstatic.net%2Fimages.se2%2Fsmedit%2F2015%2F10%2F7%2Fifgkdfr2qjsuqs.jpg%22&type=w2) 
 
-   ![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fssl.pstatic.net%2Fimages.se2%2Fsmedit%2F2015%2F10%2F7%2Fifgkf5tz3m7lu0.jpg%22&type=w2)
-
-C하나의 원소를 구하는데 드는 비용은,
-
-곱셈 ![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fssl.pstatic.net%2Fimages.se2%2Fsmedit%2F2015%2F10%2F7%2Fifgkijnwzd38sc.jpg%22&type=w2)번과 덧셈 ![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fssl.pstatic.net%2Fimages.se2%2Fsmedit%2F2015%2F10%2F7%2Fifgkiqe6ukvw79.jpg%22&type=w2)번이다.
-
-따라서, C 전체를 구할 경우 C의 크기는 n x n 이므로
-
-곱셈을 ![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fssl.pstatic.net%2Fimages.se2%2Fsmedit%2F2015%2F10%2F7%2Fifgkifggg728op.jpg%22&type=w2)번 그리고 덧셈을 ![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fssl.pstatic.net%2Fimages.se2%2Fsmedit%2F2015%2F10%2F7%2Fifgkizvgb1657n.jpg%22&type=w2)번하게 된다.
-
-따라서, 두행렬을 구하는 복잡도는 ![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fssl.pstatic.net%2Fimages.se2%2Fsmedit%2F2015%2F10%2F7%2Fifgkjounjhek20.jpg%22&type=w2)이 된다.
 
 #### 3.스트라센 알고리즘 
 
