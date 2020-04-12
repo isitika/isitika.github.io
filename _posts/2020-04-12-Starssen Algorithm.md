@@ -65,19 +65,21 @@ C= \begin{bmatrix}\mathbf {A} _{1,1}\mathbf {B} _{1,1}+\mathbf {A} _{1,2}\mathbf
 
 ![{\displaystyle \mathbf {C} _{2,2}=\mathbf {M} _{1}-\mathbf {M} _{2}+\mathbf {M} _{3}+\mathbf {M} _{6}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/b7d7d4ee9e67e0c23f1a522787d4829072542dbb)
 
+이 만들어진다.
 
+여기서 M에서 곱셈을 각각 7번을 하고 그 이후로는 덧셈만을 이용하므로 행렬곱에서 8번 곱셈을 하는 것보다 곱셈을 덜 하게 된다.
 
-이 *Mk* 행렬들은 *Ci,j* 행렬을 표현하는 데 쓰이는데, 이 행렬들을 계산하는 데는 일곱 번의 곱셈(각 변수마다 한 번씩)과 10번의 덧셈이 필요하다. 이제 *Ci,j* 행렬은 다음과 같이 표현할 수 있다.
+만약 이 곱셈을 덜 하고 덧셈을 더 하는 것을 재귀적으로 반복하여 식으로 나타내면 ![{\displaystyle 7\cdot n^{\log _{2}7}-6\cdot n^{2}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/586e85e6ba93daf1db18e144da90a79af278e9a9) 번의 연산이 필요한 것으로 나온다,
 
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/26875b8ca1815e2c322c798faeecabe1d7836798)
+여기서  \log _{2}7=2.807 이므로 총 연산시간은 n의 약2.8 제곱이다.
 
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/e71779a8ecc64f3e1268485cf389a05cdd3e6bf8)
+스트라센 알고리즘은 행렬곱 계산에서 참신한 방법으로 연산시간을 n의 3제곱에서 더 줄여주는다.
 
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/5853fa11f016df7eee4eb2a7ceb6137d3b3296de)
+하지만 이 스트라센 알고리즘이 컴퓨터에서 행렬곱연산에 쓰일 때는 M이라는 수식을 만들어 저장해야할 공간도 있어야 하고 n의 숫자가 작을 때는 위에서 볼때 와 같이 식에 덧셈이 많아져 연산시간이 더 걸려 비효율적일 수 있다.
 
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/b7d7d4ee9e67e0c23f1a522787d4829072542dbb)
+하지만 n의 숫자가 많아질수록 점차 스트라센의 알고리즘의 연산시간이 더 적어지므로 큰 행렬끼리의 곱을 계산 할 때 더 시간을 단축시킬 수 있으므로 전체적으로 효율적인 알고리즘이라고 볼 수 있다.
 
-
+ 
 
 
 
