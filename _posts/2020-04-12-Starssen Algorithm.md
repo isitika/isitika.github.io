@@ -23,22 +23,17 @@ use_math: true
 
 A =\begin{bmatrix}\mathbf {A} _{1,1}&\mathbf {A} _{1,2}\\\ \mathbf {A} _{2,1}&\mathbf {A} _{2,2}\end{bmatrix}
 
-B ={\begin{bmatrix}\mathbf {B} _{1,1}&\mathbf {B} _{1,2}\\\ \mathbf {B} _{2,1}&\mathbf {B} _{2,2}\end{bmatrix}
-
-![{\displaystyle \mathbf {A} ={\begin{bmatrix}\mathbf {A} _{1,1}&\mathbf {A} _{1,2}\\\mathbf {A} _{2,1}&\mathbf {A} _{2,2}\end{bmatrix}}{\mbox{ , }}\mathbf {B} ={\begin{bmatrix}\mathbf {B} _{1,1}&\mathbf {B} _{1,2}\\\mathbf {B} _{2,1}&\mathbf {B} _{2,2}\end{bmatrix}}{\mbox{ , }}\mathbf {C} ={\begin{bmatrix}\mathbf {C} _{1,1}&\mathbf {C} _{1,2}\\\mathbf {C} _{2,1}&\mathbf {C} _{2,2}\end{bmatrix}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/41c6337190684aff7b69f124226d6e62d79ebca5)
+B =\begin{bmatrix}\mathbf {B} _{1,1}&\mathbf {B} _{1,2}\\\ \mathbf {B} _{2,1}&\mathbf {B} _{2,2}\end{bmatrix}
 
 로나타내어 지고
 
 그의 곱인 C는
 
-C= \begin{bmatrix}
-      A_{1,1}B_{1,1}+A_{1,2}B_{2,1}&A_{1,1}B_{1,2}+A_{1,2}B_{2,2}\\
-      A_{2,1}B_{1,1}+A_{2,2}B_{2,1}&A_{2,1}B_{1,2}+A_{2,2}B_{2,2}
-     \end{bmatrix}
+C= \begin{bmatrix}\mathbf {A} _{1,1}\mathbf {B} _{1,1}+\mathbf {A} _{1,2}\mathbf {B} _{2,1}&\mathbf {A} _{1,1}\mathbf {B} _{1,2}+\mathbf {A} _{1,2}\mathbf {B} _{2,2}\\\ \mathbf {A} _{2,1}\mathbf {B} _{1,1}+\mathbf {A} _{2,2}\mathbf {B} _{2,1}&\mathbf {A} _{2,1}\mathbf {B} _{1,2}+\mathbf {A} _{2,2}\mathbf {B} _{2,2}\end{bmatrix}
 
-로 나타내어 진다.
+로나타내어 지고
 
-그리고 이 행렬곱의 수행시간은 행렬곱인 C의 n개의 원소n개에 n번에 곱셉을하고 이 원소가 nxn개가 있으므로 n^{3}의 수행시간을 가지고 있다.
+그리고 이 행렬곱의 수행시간은 행렬곱인 C의 n개의 원소n개에 n번에 곱셉을하고 이 원소가 nxn개가 있으므로 n의 3제곱의 수행시간을 가지고 있다.
 
 #### 3.스트라센 알고리즘 
 
