@@ -22,12 +22,12 @@ use_math: true
 일단 행렬 A와 B를 2x2행렬로 나타내어 보면
 
 A= \begin{bmatrix}
- A_{1,1}& A_{1,2}\\ 
+ A_{1,1}& A_{1,2}\\ \
  A_{2,1}&A_{2,2} 
 \end{bmatrix}
 
 B= \begin{bmatrix}
- B_{1,1}& B_{1,2}\\ 
+ b_{1,1}& B_{1,2}\\ \
  B_{2,1}&B_{2,2} 
 \end{bmatrix}
 
