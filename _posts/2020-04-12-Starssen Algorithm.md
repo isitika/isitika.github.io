@@ -43,6 +43,8 @@ C= \begin{bmatrix}\mathbf {A} _{1,1}\mathbf {B} _{1,1}+\mathbf {A} _{1,2}\mathbf
 
  \mathbf {M} _{1}=(\mathbf {A} _{1,1}+\mathbf {A} _{2,2})(\mathbf {B} _{1,1}+\mathbf {B} _{2,2})
 
+\mathbf {M} _{1}:=(\mathbf {A} _{1,1}+\mathbf {A} _{2,2})(\mathbf {B} _{1,1}+\mathbf {B} _{2,2})
+
  \mathbf {M} _{2}=(\mathbf {A} _{1,1}+\mathbf {A} _{2,2})\mathbf {B} _{1,1}
 
  \mathbf {M} _{3}=\mathbf {A} _{1,1}(\mathbf {B} _{1,2}-\mathbf {B} _{2,2})
@@ -56,6 +58,10 @@ C= \begin{bmatrix}\mathbf {A} _{1,1}\mathbf {B} _{1,1}+\mathbf {A} _{1,2}\mathbf
  \mathbf {M} _{7}=(\mathbf {A} _{1,2}-\mathbf {A} _{2,2})(\mathbf {B} _{2,1}+\mathbf {B} _{2,2})
 
 그리고 이제 이 M으로 C를 만들면
+
+ \mathbf {C} _{1,1}=(\mathbf {A} _{1,2}-\mathbf {A} _{2,2})(\mathbf {B} _{2,1}+\mathbf {B} _{2,2})
+
+
 
 
 
