@@ -21,9 +21,9 @@ use_math: true
 
 일단 행렬 A와 B를 2x2행렬로 나타내어 보면
 
-A =\begin{bmatrix}\mathbf {A} _{1,1}&\mathbf {A} _{1,2}\\\ mathbf {A} _{2,1}&\mathbf {A} _{2,2}\end{bmatrix}}
+A =\begin{bmatrix}\mathbf {A} _{1,1}&\mathbf {A} _{1,2}\\\ \mathbf {A} _{2,1}&\mathbf {A} _{2,2}\end{bmatrix}
 
-B ={\begin{bmatrix}\mathbf {B} _{1,1}&\mathbf {B} _{1,2}\\\ mathbf {B} _{2,1}&\mathbf {B} _{2,2}\end{bmatrix}}{\mbox{ , 
+B ={\begin{bmatrix}\mathbf {B} _{1,1}&\mathbf {B} _{1,2}\\\ \mathbf {B} _{2,1}&\mathbf {B} _{2,2}\end{bmatrix}
 
 ![{\displaystyle \mathbf {A} ={\begin{bmatrix}\mathbf {A} _{1,1}&\mathbf {A} _{1,2}\\\mathbf {A} _{2,1}&\mathbf {A} _{2,2}\end{bmatrix}}{\mbox{ , }}\mathbf {B} ={\begin{bmatrix}\mathbf {B} _{1,1}&\mathbf {B} _{1,2}\\\mathbf {B} _{2,1}&\mathbf {B} _{2,2}\end{bmatrix}}{\mbox{ , }}\mathbf {C} ={\begin{bmatrix}\mathbf {C} _{1,1}&\mathbf {C} _{1,2}\\\mathbf {C} _{2,1}&\mathbf {C} _{2,2}\end{bmatrix}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/41c6337190684aff7b69f124226d6e62d79ebca5)
 
