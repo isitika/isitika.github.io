@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Greedy Algorithms
+title: Greedy Algorithm
 date: 2020-04-26 21:00:00 +0900
 author: dongJin
 use_math: true
